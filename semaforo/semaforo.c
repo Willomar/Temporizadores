@@ -18,9 +18,9 @@ bool callback_temporizador(struct repeating_timer *t) {
     if (estado_semaforo == 0) {
         gpio_put(LED_VERMELHO, 1);
     } else if (estado_semaforo == 1) {
-        //gpio_piut(LED_AMARELO, 1);
-        gpio_put(LED_VERMELHO, 1);
-        gpio_put(LED_VERDE, 1);
+        gpio_piut(LED_AMARELO, 1);
+        //gpio_put(LED_VERMELHO, 1);
+        //gpio_put(LED_VERDE, 1);
     } else {
         gpio_put(LED_VERDE, 1);
     }
